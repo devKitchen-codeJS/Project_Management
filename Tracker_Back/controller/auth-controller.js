@@ -34,8 +34,7 @@ module.exports.createUser = async function(req, res){
       const header1 = await req.headers['authorization']      
       const decoded_Token = await decodeToken(header1,res)
       const user ={email:decoded_Token.email, name: decoded_Token.name, password:decoded_Token.password, proffetion:decoded_Token.proffetion}      
-      const email = user.
-      email
+      const email = user.email
       const name = user.name
       const password = user.password
       const proffetion = user.proffetion
